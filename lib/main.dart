@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import './db/app_database.dart';
 import 'bloc/api_bloc.dart';
 import 'screens/home_page.dart';
 
 Future main() async {
   await dotenv.load(fileName: ".env");
+  final database = AppDatabase();
+  database.connect();
+
   runApp(BlocProvider(create: (context) => ApiBloc(), child: MyApp()));
 }
 

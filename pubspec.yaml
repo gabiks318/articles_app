@@ -14,6 +14,9 @@ dependencies:
     sdk: flutter
   flutter_bloc: ^8.0.0
   drift: ^2.9.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.0.0
+  path: ^1.8.3
   cupertino_icons: ^1.0.2
   retrofit: any
   json_annotation: ^4.8.1
@@ -24,6 +27,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   retrofit_generator: any
+  drift_dev: ^2.9.0
   build_runner: any
   json_serializable: any
   flutter_lints: ^2.0.0
